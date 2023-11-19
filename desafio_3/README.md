@@ -10,7 +10,7 @@ Assim como demonstrado durante o desafio, realize a criação do Script SQL para
 * Crie junções entre tabelas para fornecer uma perspectiva mais complexa dos dados
 
 **Diretrizes** <br />
-*Não há um mínimo de queries a serem realizadas;
-*Os tópicos supracitados devem estar presentes nas queries;
-*Elabore perguntas que podem ser respondidas pelas consultas;
-*As cláusulas podem estar presentes em mais de uma query;
+* Não há um mínimo de queries a serem realizadas;
+* Os tópicos supracitados devem estar presentes nas queries;
+* Elabore perguntas que podem ser respondidas pelas consultas;
+* As cláusulas podem estar presentes em mais de uma query;
