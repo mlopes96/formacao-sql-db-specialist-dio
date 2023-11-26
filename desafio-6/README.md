@@ -25,14 +25,14 @@ Além disso, em casos de remoção podemos utilizar as triggers. <br />
 Sendo assim, crie as seguintes triggers para o cenário de company: <br />
 
 * Triggers de atualização: before update statement
-* Atribuindo aumento de salário para um dept específico = 1 salary = salary * 1.20;
+** Atribuindo aumento de salário para um dept específico = 1 salary = salary * 1.20;
 
 * Triggers de remoção: before delete statement
-* Salvando em outra tabela os employees demitidos usando old.attribute
+** Salvando em outra tabela os employees demitidos usando old.attribute
 
 Replique o mesmo procedimento para o cenário de ecommerce, da seguinte forma: <br />
 * Triggers de atualização: before update statement
-* Desconto por causa da Black Fiday
+** Desconto por produtos de determinada categoria em razão da Black Fiday
 
 * Triggers de remoção: before delete statement
-* Usuários podem excluir suas contas por algum motivo. Dessa forma, para não perder as informações sobre estes usuários, crie um gatilho before remove 
+** Usuários podem excluir suas contas por algum motivo. Dessa forma, para não perder as informações sobre estes usuários, crie um gatilho before remove 
