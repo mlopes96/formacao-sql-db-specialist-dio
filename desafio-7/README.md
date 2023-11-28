@@ -12,8 +12,9 @@ Dessa forma, você irá executar statements de consultas e modificações de dad
 ### Parte 2 - TRANSAÇÃO COM PROCEDURE <br />
 Você deverá criar outra transação, contudo, esta será definida dentro de uma procedure. 
 Neste caso, assim como no exemplo em aula, deverá haver uma verificação de erro. 
-Essa verificação irá acarretar um ROLLBACK, total ou parcial (SAVEPOINT). <br />
-
+Essa verificação irá acarretar um ROLLBACK, total ou parcial (SAVEPOINT).
+<br />
+<br />
 
 ### Parte 3 – BACKUP E RECOVERY <br />
 
