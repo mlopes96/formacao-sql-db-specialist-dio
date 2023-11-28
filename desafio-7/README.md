@@ -2,10 +2,10 @@
 ### Parte 1 – TRANSAÇÕES <br />   
 Neste desafio você irá lidar com transações para executar modificações na base de dados. 
 Sendo assim, vamos relembrar como executar uma transação. Primeiramente, é preciso desabilitar o autocommit do MySQL. 
-Caso contrário, cada instrução SQL executada será confirmada. <br />
+Caso contrário, cada instrução SQL executada será confirmada.<br />
 
 Essa primeira transação pode ser executada sem utilizar outros recursos como procedures. 
-Dessa forma, você irá executar statements de consultas e modificações de dados persistidos no banco de dados via transações.  
+Dessa forma, você irá executar statements de consultas e modificações de dados persistidos no banco de dados via transações.
 <br />
 <br />
 
