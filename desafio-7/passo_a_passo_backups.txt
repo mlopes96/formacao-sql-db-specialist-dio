@@ -1,0 +1,39 @@
+Parte 3 – BACKUP E RECOVERY
+Nesta etapa do desafio, você irá executar o backup do banco de dados e-commerce.
+Realize o backup e recovery do banco de dados ecommerce e dos demais 
+
+-- Abre a pasta do mysql para criação dos backups no terminal do Windows
+cd C:\Program Files\MySQL\MySQL Server 8.0\bin
+
+Utilize o mysqdump para realizar o backup e recovery do banco de dados e-commerce:
+-- Cria o backup geral do banco ecommerce
+mysqldump -u root -p --databases ecommerce > ecommerce_backup.sql
+
+-- Executa o restore do banco de dados 
+mysql -u root -p < ecommerce_backup.sql
+
+-- Cria o backup apenas da estrutura do banco de dados
+mysqldump -u root -p --no-data --databases ecommerce > ecommerce_backup_no_data.sql
+
+-- Cria o backup apenas dos dados que estavam salvos no banco
+mysqldump -u root -p --no-create-info --databases ecommerce > ecommerce_backup_data.sql
+
+-- Cria o backup apenas das procedures e triggers
+mysqldump --routines --triggers --no-create-info --no-data --no-create-db --skip-opt -u root -p ecommerce > ecommerce-routines_triggers.sql
+
+-- Cria o backup geral com procedures e triggers
+mysqldump --routines --triggers -u root -p ecommerce > ecommerce-backup_full.sql
+
+
+Utilize o mysqdump para realizar o backup de outros bancos de dados:
+-- Cria o backup do banco de dados oficina
+mysqldump --routines --triggers -u root -p --databases oficina > oficina_backup_full.sql
+
+-- Executa o restore do banco de dados oficina
+mysql -u root -p < oficina_backup_full.sql
+
+-- Cria o backup do banco de dados company
+mysqldump --routines --triggers -u root -p --databases company_constraints > company_backup_full.sql
+
+-- Executa o restore do banco de dados company
+mysql -u root -p < company_backup_full.sql
